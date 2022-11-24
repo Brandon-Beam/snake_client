@@ -16,7 +16,7 @@ const handleUserInput = function (key) {
   };
   if (key === 'w') {
     connection.write("Move: up");
-  };
+  }
   if (key === 'a') {
     connection.write("Move: left");
   };
@@ -25,7 +25,11 @@ const handleUserInput = function (key) {
   };
   if (key === 'd') {
     connection.write("Move: right");
-  }
+  }; if (key === 'q') {
+    connection.write("Say: sneaky snek");
+  }; if (key === 'e') {
+    connection.write("Say: longboi");
+  };
 };
 
 module.exports = { setupInput } //at sending data
